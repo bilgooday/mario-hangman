@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mario Hangman!</title>
+    <link rel="shortcut icon" href="images/mario-head.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body>
+    <header>
+       <h1>Mario Hangman</h1>
+    </header>
+
+    <div id="start-page">
+      <h2>Player 1: think of a good word</h2>
+      <input id="the-bird" type="password" placeholder="Type the word here...">
+      <button id="enter">Enter</button>
+
+      <div id="ready">
+      <h4 id="ready-message">Secret word set! Click "Start" to begin</h4>
+      </div>
+
+      <h2>Player 2: No Peeking!</h2>
+      <button id="start-button">START GAME</button>
+      <button id="instructions">INSTRUCTIONS</button>
+
+    </div>
+
+    <div id="game-page">
+      <div id="flexbox360">
+        <div id="keypad"></div>
+        <canvas id="stickman" width="350" height="350">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+        <div id="wrong-guess">
+          <h3 id="wg-title">Wrong Guesses</h3>
+        </div>
+      </div>
+
+        <div id="placeholder"></div>
+      </div>
+
+    <div id="player">
+        <audio autoplay hidden>
+        <source id="theme" src="MarioTheme.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+      <script src="game.js"></script>
+  </body>
+</html>

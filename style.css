@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'MarioFont';
+  src: url('MarioFont.eot'); /* IE9 Compat Modes */
+  src: url('MarioFont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('MarioFont.woff') format('woff'), /* Modern Browsers */
+       url('MarioFont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('MarioFont.svg#svgMarioFont') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background: url("images/MarioWorld-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: -webkit-fill-available;
+  position: relative;
+  text-align: center;
+  font-family: "MarioFont";
+}
+
+h1 {
+  color: rgba(255, 28, 29, .9);
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		3px 3px 0 #000;
+  font-size: 60px;
+}
+
+h2, h3 {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  margin: 0 0 0 25px;
+}
+
+h4 {
+  color: rgb(249, 210, 72);
+  font-size: 20px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#start-page {
+  margin-top: 85px;
+}
+
+#stickman {
+  border: 3px solid white;
+  text-outline: 2px solid black;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 75px;
+}
+
+#flexbox360 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 85px;
+}
+
+#wrong-guess li{
+  display: inline;
+  margin: 0 10px 0 0;
+  font-size: 20px;
+}
+
+#keypad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  flex-wrap: wrap;
+  margin: 70px 50px 0 0;
+}
+
+#alphabet li {
+  float: left;
+  margin: 0 5px 13px 0;
+  list-style: none;
+  width: 12px;
+  height: 10px;
+  padding: 10px;
+  background: rgba(192,	88,	39,	.8);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px #fff;
+}
+
+#placeholder {
+  margin: 35px 0 75px 0;
+  font-size: 40px;
+  color: white;
+}
+
+#wrong-guess {
+  margin: 35px 0 0 25px;
+  padding-bottom: 10px;
+}
+
+#wg-title {
+  margin-bottom: 25px;
+}
+
+#wrong-letter {
+  color: white;
+}
+
+input {
+  padding: 10px 25px 10px 25px;
+  margin: 15px;
+  font-size: 20px;
+  background-color: rgba(255,	255,	255, .4);
+  border-radius: 10px;
+  border: solid white;
+}
+
+button {
+  font-size: 12px;
+  color: rgba(0, 0, 0, .9);
+  border: 2px solid black;
+  padding: 5px 15px 5px 15px;
+  border-radius: 70px;
+  background: linear-gradient(rgba(220,220,220,0.6), rgba(211,211,211,0.6));
+}
+
+button:hover {
+  border: 2px solid rgb(249, 210, 72);
+}
+
+.active {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.active:hover {
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
